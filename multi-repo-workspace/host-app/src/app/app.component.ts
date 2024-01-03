@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'host-app';
+
+  handleCounter() {
+    const customEvent = new Event("controlMfeCounter");
+    window.dispatchEvent(customEvent);
+  }
 }

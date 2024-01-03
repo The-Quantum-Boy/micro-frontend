@@ -1,0 +1,9 @@
+<div style="padding: 20px; border: 1px solid red; width: 100%; margin: auto;">
+  <label style="font-size: medium; font-weight: 700;"> Counter value: &nbsp; <p>{{ counter }}</p></label>
+  <div>
+    <button style="height: 40px;" (click)="handleCounter()">counter</button>
+  </div>
+  <div>
+    <input type="text" (blur)="handleHostText($event)">
+  </div>
+</div>
